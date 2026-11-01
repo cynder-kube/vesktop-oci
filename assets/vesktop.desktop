@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Vesktop
+Comment=Discord client
+Exec=/usr/bin/vesktop
+Icon=vesktop
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;
+StartupWMClass=vesktop
