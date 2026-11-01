@@ -32,8 +32,10 @@ RUN apt-get update && apt-get install -y \
     libxdamage1 \
     libxrandr2 \
     libxkbcommon0 \
-    libatspi2.0-0t64
+    libatspi2.0-0t64 \
+    libpipewire-0.3-0 \
+    libspa-0.2-modules
 
 WORKDIR /usr/bin
 USER 1000:1000
-ENTRYPOINT ["/usr/bin/vesktop"]
+ENTRYPOINT ["/usr/bin/vesktop","--ozone-platform=wayland","--enable-features=WebRTCPipeWireCapturer"]
